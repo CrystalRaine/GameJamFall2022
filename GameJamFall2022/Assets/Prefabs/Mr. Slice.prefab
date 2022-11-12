@@ -108,6 +108,7 @@ MonoBehaviour:
   step: 0.005
   health: 2
   player: {fileID: 0}
+  attackCooldown: 24
 --- !u!50 &5550158067982646583
 Rigidbody2D:
   serializedVersion: 4
