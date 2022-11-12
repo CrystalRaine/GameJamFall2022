@@ -258,4 +258,4 @@ MonoBehaviour:
   Grapeshot: {fileID: 7950195705904260744, guid: 296c4eba797fa8f46ad38cd02f43bd92, type: 3}
   OrangeMarmalade: {fileID: 0}
   Pepper: {fileID: 0}
-  Ammo: 0
+  Ammo: 1
