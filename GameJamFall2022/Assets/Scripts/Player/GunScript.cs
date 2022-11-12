@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum AmmoType
@@ -21,8 +22,20 @@ public class GunScript : MonoBehaviour
 
     public AmmoType Ammo;
 
-    public float cooldown;
+    public Dictionary<AmmoType, float> Cooldowns;
+
     private float currentCooldown;
+
+    private void Start()
+    {
+        Cooldowns = new Dictionary<AmmoType, float>() 
+        {
+            {AmmoType.STRAWBERRY, 2},
+            {AmmoType.GRAPESHOT, 4},
+            {AmmoType.MARMALADE, 0},
+            {AmmoType.PEPPER, .5f},
+        };
+    }
 
     void Update()
     {
@@ -52,7 +65,7 @@ public class GunScript : MonoBehaviour
         if (Input.GetMouseButton(0) && currentCooldown <= 0 && AmmoCount > 0)
         {
             AmmoCount--;
-            currentCooldown = cooldown;
+            currentCooldown = Cooldowns[Ammo];
             Instantiate(
                 Ammo switch
                 {
