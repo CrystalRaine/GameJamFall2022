@@ -541,7 +541,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: bimbert-test-glass
       objectReference: {fileID: 0}
-    - target: {fileID: 5182769023310963804, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+    - target: {fileID: 5779142481363163723, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: Damping
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779142481363163723, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779142481363163725, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}

@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        var mag = (VelocityVector.magnitude - Damping * Time.deltaTime);
+        var mag = VelocityVector.magnitude * (1 - Damping * Time.deltaTime);
 
         if (mag > 0)
             VelocityVector = VelocityVector.normalized * mag;
