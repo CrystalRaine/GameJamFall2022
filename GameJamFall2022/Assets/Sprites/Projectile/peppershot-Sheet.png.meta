@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,7 +132,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f8dd7ad06f56b244eb1cc1ab67710029
-      internalID: -1635601739
+      internalID: -2276154642234694268
       vertices: []
       indices: 
       edges: []
@@ -141,7 +153,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1e07d905fced48146adb023971334cd1
-      internalID: 604143995
+      internalID: 3513395193694449254
       vertices: []
       indices: 
       edges: []
@@ -162,7 +174,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1cbf6bf8937b1cb4db4dd45ec6973a3a
-      internalID: 1414372201
+      internalID: 7508422015880099178
       vertices: []
       indices: 
       edges: []
@@ -183,7 +195,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b9b9e963626b9e4ea18e6ab22c638ba
-      internalID: -1376103779
+      internalID: -6456855868263823425
       vertices: []
       indices: 
       edges: []
@@ -204,32 +216,15 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee282c4cc69e17849bd310eb3e1ef591
-      internalID: -124405652
+      internalID: -6543199813573066514
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 03dafef1e64ee214fb2ca0294fc14bf0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -237,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      peppershot-Sheet_1: 604143995
-      peppershot-Sheet_4: -124405652
-      peppershot-Sheet_3: -1376103779
-      peppershot-Sheet_2: 1414372201
-      peppershot-Sheet_0: -1635601739
+      peppershot-Sheet_1: 3513395193694449254
+      peppershot-Sheet_4: -6543199813573066514
+      peppershot-Sheet_3: -6456855868263823425
+      peppershot-Sheet_2: 7508422015880099178
+      peppershot-Sheet_0: -2276154642234694268
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
