@@ -102,11 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-<<<<<<< Updated upstream
   destroyOnHit: 1
-=======
-  destroyOnHit: 0
->>>>>>> Stashed changes
   Velocity: 5
 --- !u!50 &6926478798680878293
 Rigidbody2D:
