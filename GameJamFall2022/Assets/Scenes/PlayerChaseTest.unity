@@ -123,24 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &724625677
+--- !u!1001 &121865263
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: Damping
-      value: 5
+    - target: {fileID: 1550750157, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: MaxVelocity
-      value: 20
+    - target: {fileID: 1550750157, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: Acceleration
-      value: 20
+    - target: {fileID: 5182769023083772907, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963804, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: 0.33074257
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963804, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_LocalPosition.z
@@ -194,7 +194,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5182769023310963806, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5182769023310963807, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
 --- !u!1 &1535231537
 GameObject:
