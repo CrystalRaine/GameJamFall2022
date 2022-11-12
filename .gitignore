@@ -7,7 +7,7 @@
 **/[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Ll]ogs/
+**/[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
@@ -70,3 +70,24 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+*.log
+*.dwlt
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+GameJamFall2022/UserSettings/EditorUserSettings.asset
+GameJamFall2022/UserSettings/EditorUserSettings.asset
+=======
+>>>>>>> Stashed changes
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+=======
+
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+=======
+
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> Stashed changes
+GameJamFall2022/Assets/Sprites/the-crumb-walk-Sheet.png.meta
