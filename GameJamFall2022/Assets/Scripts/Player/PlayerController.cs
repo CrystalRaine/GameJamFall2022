@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 VelocityVector;
     private SpriteRenderer sprite;
     public int health = 10;
-
+    
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -35,5 +35,13 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(VelocityVector * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Boss") 
+        {
+            this.health -= 5;
+        }
     }
 }
