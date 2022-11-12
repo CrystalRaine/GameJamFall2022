@@ -27,7 +27,6 @@ public class GunScript : MonoBehaviour
     {
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
         //Arm.transform.forward = aimVector;
-        Debug.Log(currentCooldown);
 
         if (Input.GetMouseButton(0) && currentCooldown <= 0)
         {
