@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class mouseFollow : MonoBehaviour
 {
-    void Awake()
+    void Start()
     {
         Cursor.visible = false;
     }
