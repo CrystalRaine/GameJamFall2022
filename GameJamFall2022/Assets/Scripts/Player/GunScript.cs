@@ -39,9 +39,9 @@ public class GunScript : MonoBehaviour
         var dot = Vector2.Dot(Vector2.right, aimVector);
 
         if (dot > 0)
-            transform.localScale = new Vector3(1, 1);
+            transform.localScale = new Vector3(2, 2);
         else if (dot < 0)
-            transform.localScale = new Vector3(-1, 1);
+            transform.localScale = new Vector3(-2, 2);
 
         if (Arm != null)
             Arm.transform.right = aimVector * dot / Mathf.Abs(dot);

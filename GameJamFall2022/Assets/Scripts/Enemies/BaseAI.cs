@@ -39,7 +39,7 @@ public class BaseAI : MonoBehaviour
 
     public bool NearPlayer(float radius)
     {
-        if (Vector3.Distance(player.transform.position, enemy.transform.position) < radius) { Debug.Log("True");  return true; } else { return false; }
+        if (Vector3.Distance(player.transform.position, enemy.transform.position) < radius) {  return true; } else { return false; }
     }
     // Update is called once per frame
     void Update()
@@ -57,6 +57,15 @@ public class BaseAI : MonoBehaviour
         {
 
             currentGoal = GetRandomPositionNearSelf();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collided");
+        if(collision.gameObject.GetComponent<Projectile>())
+        {
+            Debug.Log("Collided with projectile");
         }
     }
 }
