@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7924804902866346841}
   m_Layer: 0
   m_Name: Grapeshot
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f37a1f9f19bfd04badcefed3133dd77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  bc: {fileID: 0}
   particle: {fileID: 3615152623603466488, guid: d00ececa8c94cf346a5e2b32444b5108, type: 3}
   count: 10
   speed: 10
