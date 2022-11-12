@@ -214,34 +214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 722777174, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.446
-      objectReference: {fileID: 0}
-    - target: {fileID: 722777174, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.071
-      objectReference: {fileID: 0}
-    - target: {fileID: 766961159, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.098
-      objectReference: {fileID: 0}
-    - target: {fileID: 766961159, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.118
-      objectReference: {fileID: 0}
-    - target: {fileID: 1993612981, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.446
-      objectReference: {fileID: 0}
-    - target: {fileID: 1993612981, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.071
-      objectReference: {fileID: 0}
-    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
-      propertyPath: Pepper
-      value: 
-      objectReference: {fileID: 2353521560024295628, guid: 11d001126971c104ea8a534e1fcfe96d, type: 3}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
       value: bimbert-test-glass

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722777173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.104, y: 0.065, z: 0}
+  m_LocalPosition: {x: 0.446, y: 0.071, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766961158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.452, y: -0.124, z: 0}
+  m_LocalPosition: {x: -0.098, y: -0.118, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -142,7 +142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993612980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.104, y: 0.065, z: 0}
+  m_LocalPosition: {x: 0.446, y: 0.071, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -217,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5182769023083772906
 Transform:
   m_ObjectHideFlags: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
   Strawberry: {fileID: 6926478798680878292, guid: a56d374b3c1d22e45817a03635ad577f, type: 3}
   Grapeshot: {fileID: 7950195705904260744, guid: 296c4eba797fa8f46ad38cd02f43bd92, type: 3}
   OrangeMarmalade: {fileID: 0}
-  Pepper: {fileID: 0}
+  Pepper: {fileID: 2353521560024295628, guid: 11d001126971c104ea8a534e1fcfe96d, type: 3}
   Ammo: 0
   cooldown: 0.1
 --- !u!50 &1550750157
