@@ -14,9 +14,11 @@ public class BaseAI : MonoBehaviour
     public float minY = -4.5f;
     public float movementRange = 3;
     public float step = .005f;
+    public GameObject player;
     private void Start()
     {
         currentGoal = GetRandomPositionNearSelf();
+        player = GameObject.FindWithTag("Player");
     }
     public void MoveToGoal(Vector2 goal)
     {
@@ -37,14 +39,14 @@ public class BaseAI : MonoBehaviour
 
     public bool NearPlayer(float radius)
     {
-        if (Vector3.Distance(new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0), enemy.transform.position) < radius) { Debug.Log("True");  return true; } else { return false; }
+        if (Vector3.Distance(player.transform.position, enemy.transform.position) < radius) { Debug.Log("True");  return true; } else { return false; }
     }
     // Update is called once per frame
     void Update()
     {
         if (NearPlayer(8))
         {
-            currentGoal = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
+            currentGoal = player.transform.position;
         }
         
         if (Vector3.Distance(enemy.transform.position, currentGoal) >= .001)
