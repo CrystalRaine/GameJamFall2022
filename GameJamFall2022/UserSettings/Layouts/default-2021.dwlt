@@ -53,6 +53,7 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 12117}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 23
 =======
 <<<<<<< Updated upstream
@@ -62,6 +63,9 @@ MonoBehaviour:
   controlID: 188
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+  controlID: 17
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,6 +241,7 @@ MonoBehaviour:
   m_MaxSize: {x: 8096, y: 12117}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 63
 =======
 <<<<<<< Updated upstream
@@ -246,6 +251,9 @@ MonoBehaviour:
   controlID: 168
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+  controlID: 25
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,6 +279,7 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 64
 =======
 <<<<<<< Updated upstream
@@ -280,6 +289,9 @@ MonoBehaviour:
   controlID: 169
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+  controlID: 95
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -349,6 +361,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets
 =======
     - Assets/Scenes
@@ -357,11 +370,15 @@ MonoBehaviour:
 =======
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+    - Assets/Scenes
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets
 =======
@@ -371,12 +388,16 @@ MonoBehaviour:
 =======
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+  - Assets/Scenes
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lasti\Documents\GitHub\GameJamFall2022\GameJamFall2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 3e600000
     m_LastClickedID: 24638
@@ -393,6 +414,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000fc5e000000ca9a3bffffff7f
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+    m_SelectedIDs: 32600000
+    m_LastClickedID: 24626
+    m_ExpandedIDs: 000000002460000000ca9a3bffffff7f
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -421,6 +447,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003e600000
 =======
 <<<<<<< Updated upstream
@@ -430,6 +457,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000fc5e000000ca9a3bffffff7f
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+    m_ExpandedIDs: 0000000024600000
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -560,6 +590,7 @@ MonoBehaviour:
       m_SelectedIDs: 2e610000
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 76f9ffffb6f9ffff0efbffff
 =======
 <<<<<<< Updated upstream
@@ -569,6 +600,9 @@ MonoBehaviour:
       m_ExpandedIDs: bef8fffff6f8ffff2ef9ffff66f9ffff62faffff
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+      m_ExpandedIDs: e6f7ffff1ef8ffff56f8fffff4f8ffff2cf9ffffcef9ffff14faffff2cfbffff
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -873,6 +907,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -1.2646456, y: 3.0512052, z: -0.23211582}
     speed: 2
     m_Value: {x: -1.2646456, y: 3.0512052, z: -0.23211582}
@@ -888,6 +923,11 @@ MonoBehaviour:
     m_Value: {x: -51.70461, y: -0.90166384, z: -0.76147234}
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+    m_Target: {x: -3.4671116, y: 1.3721893, z: -0.2834684}
+    speed: 2
+    m_Value: {x: -3.4671116, y: 1.3721893, z: -0.2834684}
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -939,6 +979,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 21.133766
     speed: 2
     m_Value: 21.133766
@@ -954,6 +995,11 @@ MonoBehaviour:
     m_Value: 85.73867
 >>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
 >>>>>>> Stashed changes
+=======
+    m_Target: 4.229298
+    speed: 2
+    m_Value: 4.229298
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
   m_Ortho:
     m_Target: 1
     speed: 2
