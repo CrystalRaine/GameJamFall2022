@@ -132,15 +132,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: Damping
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: MaxVelocity
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963802, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: Acceleration
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
