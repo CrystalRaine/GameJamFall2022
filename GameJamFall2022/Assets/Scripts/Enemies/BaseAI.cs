@@ -14,6 +14,7 @@ public class BaseAI : MonoBehaviour
     public float minY = -4.5f;
     public float movementRange = 3;
     public float step = .005f;
+    public int health = 2;
     public GameObject player;
     private void Start()
     {
@@ -60,12 +61,11 @@ public class BaseAI : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collided");
-        if(collision.gameObject.GetComponent<Projectile>())
-        {
-            Debug.Log("Collided with projectile");
-        }
+        Debug.Log("Collision");
+        Destroy(collision.gameObject);
+        health--;
+        if(health <= 0) { Destroy(this.gameObject); }
     }
 }
