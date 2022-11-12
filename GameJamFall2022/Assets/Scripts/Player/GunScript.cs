@@ -30,10 +30,10 @@ public class GunScript : MonoBehaviour
     {
         Cooldowns = new Dictionary<AmmoType, float>() 
         {
-            {AmmoType.STRAWBERRY, 2},
-            {AmmoType.GRAPESHOT, 4},
-            {AmmoType.MARMALADE, 0},
-            {AmmoType.PEPPER, .5f},
+            {AmmoType.STRAWBERRY, 0.75f},
+            {AmmoType.GRAPESHOT, 1.5f},
+            {AmmoType.MARMALADE, 3},
+            {AmmoType.PEPPER, 1f},
         };
     }
 
