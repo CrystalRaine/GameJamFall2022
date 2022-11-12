@@ -44,7 +44,7 @@ public class GunScript : MonoBehaviour
             AmmoType.STRAWBERRY => new Color(0.8f, 0.3f, 0.3f, 1),
             AmmoType.GRAPESHOT => new Color(0.6f, 0.3f, 0.5f, 1),
             AmmoType.MARMALADE => new Color(1f, 165f / 255f, 0f, 1),
-            AmmoType.PEPPER => new Color(1f, 43f / 255f, 0f, 1)
+            AmmoType.PEPPER => new Color(0, 30, 190, 1)
         };
 
         gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
