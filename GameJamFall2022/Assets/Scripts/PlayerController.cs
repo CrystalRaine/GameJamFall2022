@@ -16,14 +16,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        VelocityVector += 
-            new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized
+        var mag = (VelocityVector.magnitude - Damping * Time.deltaTime);
+
+        if (mag > 0)
+            VelocityVector = VelocityVector.normalized * mag;
+        else
+            VelocityVector = Vector2.zero;
+
+        var accelerationVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized
             * Time.deltaTime * Acceleration;
 
-        //VelocityVector -= VelocityVector.normalized * Damping;
-        if (VelocityVector.magnitude > MaxVelocity)
-            VelocityVector *= (MaxVelocity / VelocityVector.magnitude);
+        VelocityVector += accelerationVector;
 
-        transform.Translate(VelocityVector);
+        transform.Translate(VelocityVector * Time.deltaTime);
     }
 }
