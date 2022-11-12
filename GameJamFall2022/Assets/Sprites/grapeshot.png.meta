@@ -1,5 +1,25 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 240319cff99beee468668f3287fbfe37
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 44d3f1534e0eef045bc08fa8d44b7912
+=======
+guid: 240319cff99beee468668f3287fbfe37
+<<<<<<< Updated upstream
+>>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
+=======
+>>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
+>>>>>>> Stashed changes
+=======
+guid: 240319cff99beee468668f3287fbfe37
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+=======
+guid: 240319cff99beee468668f3287fbfe37
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +121,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+=======
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+>>>>>>> Stashed changes
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -113,6 +144,20 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
+=======
+>>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
+>>>>>>> Stashed changes
+=======
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+=======
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []

@@ -12,6 +12,9 @@ public class GunScript : MonoBehaviour
 
     public AmmoType Ammo;
 
+    public float cooldown;
+    private float currentCooldown;
+
     public enum AmmoType
     {
         STRAWBERRY,
@@ -25,8 +28,9 @@ public class GunScript : MonoBehaviour
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
         //Arm.transform.forward = aimVector;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0) && currentCooldown <= cooldown)
         {
+            currentCooldown = cooldown;
             Instantiate(
                 Ammo switch
                 {
@@ -36,5 +40,6 @@ public class GunScript : MonoBehaviour
                     AmmoType.PEPPER => Pepper
                 }, transform.position, Quaternion.identity);
         }
+        currentCooldown -= Time.deltaTime;
     }
 }

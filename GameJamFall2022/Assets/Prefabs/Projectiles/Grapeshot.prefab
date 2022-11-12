@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 3615152623603466488, guid: d00ececa8c94cf346a5e2b32444b5108, type: 3}
   count: 5
-  speed: 5
+  speed: 10
   spreadDegrees: 45
 --- !u!114 &7924804902866346841
 MonoBehaviour:
@@ -61,4 +61,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e872f1b57e74e2419bf026f51db2e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 60
+  lifetimeSeconds: 0

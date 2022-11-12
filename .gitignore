@@ -72,6 +72,21 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 *.log
 *.dwlt
-
-GameJamFall2022/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 GameJamFall2022/UserSettings/EditorUserSettings.asset
+GameJamFall2022/UserSettings/EditorUserSettings.asset
+=======
+>>>>>>> Stashed changes
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+=======
+
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+=======
+
+>>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+GameJamFall2022/UserSettings/Layouts/default-2021.dwlt
+>>>>>>> Stashed changes
