@@ -259,4 +259,4 @@ MonoBehaviour:
   OrangeMarmalade: {fileID: 0}
   Pepper: {fileID: 0}
   Ammo: 1
-  cooldown: 10
+  cooldown: 0.25
