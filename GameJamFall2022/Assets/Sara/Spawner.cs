@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     public void Spawn()
     {
-        GameObject go = GameObject.Instantiate(spawnType);
+        GameObject go = GameObject.Instantiate(spawnType, this.transform.position, Quaternion.identity);
 
     }
 }
