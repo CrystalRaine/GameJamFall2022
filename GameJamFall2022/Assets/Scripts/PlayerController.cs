@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-    }
 
+    }
     void Update()
     {
         if (Input.GetAxis("Horizontal") > 0)
@@ -53,5 +53,14 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(VelocityVector * Time.deltaTime);
+        VelocityVector += 
+            new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized
+            * Time.deltaTime * Acceleration;
+
+        //VelocityVector -= VelocityVector.normalized * Damping;
+        if (VelocityVector.magnitude > MaxVelocity)
+            VelocityVector *= (MaxVelocity / VelocityVector.magnitude);
+
+        transform.Translate(VelocityVector);
     }
 }
