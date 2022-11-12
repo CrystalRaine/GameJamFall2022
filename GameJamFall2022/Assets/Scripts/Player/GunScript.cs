@@ -32,7 +32,6 @@ public class GunScript : MonoBehaviour
             AmmoType.GRAPESHOT => new Color(0.6f, 0.3f, 0.5f, 1),
             AmmoType.MARMALADE => new Color(1f, 165f / 255f, 0f, 1),
             AmmoType.PEPPER => new Color(1f, 43f / 255f, 0f, 1)
-
         };
 
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
