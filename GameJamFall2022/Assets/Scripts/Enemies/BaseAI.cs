@@ -15,7 +15,7 @@ public class BaseAI : MonoBehaviour
     public float minY = -4.5f;
     public float movementRange = 3;
     public float step = .005f;
-    public int health = 2;
+    public float health = 2;
     public GameObject player;
     public int attackCooldown = 300;
     private void Start()
@@ -87,7 +87,11 @@ public class BaseAI : MonoBehaviour
         if (collision.gameObject.tag == "Projectile")
         {
             Destroy(collision.gameObject);
-            health--;
+            if (collision.gameObject.GetComponent<Projectile>().destroyOnHit) 
+            {
+                Destroy(collision.gameObject);
+            }
+            health-= collision.gameObject.GetComponent<Projectile>().damage;
             if (health <= 0) { Destroy(this.gameObject); }
             if (collision.gameObject.name == "Peppershot")
             {

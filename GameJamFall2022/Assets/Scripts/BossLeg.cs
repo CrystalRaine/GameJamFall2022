@@ -32,13 +32,16 @@ public class BossLeg : MonoBehaviour
 
     public void NewPlace() 
     {
+        
+        
         Vector3 newOrigin = new Vector3(player.transform.position.x, player.transform.position.y + 20, 0);
 
         Vector2 newStompPlace = player.transform.position;
         originalSpot = newOrigin;
         leg.transform.position = originalSpot;
         stompPlace = newStompPlace;
-        shadow = GameObject.Instantiate(shadowPrefab, stompPlace, Quaternion.identity);
+        
+        
     }
 
     public void Attack() 
@@ -48,10 +51,11 @@ public class BossLeg : MonoBehaviour
 
     IEnumerator Stomp() 
     {
-        while((Vector2)leg.transform.position != stompPlace) 
+
+        while ((Vector2)leg.transform.position != stompPlace) 
         {
             leg.transform.position = Vector2.MoveTowards(leg.transform.position, stompPlace, .1f);
-            shadow.transform.localScale = new Vector3(shadow.transform.localScale.x + .01f, shadow.transform.localScale.y + .01f, 0);
+            //shadow.transform.localScale = new Vector3(shadow.transform.localScale.x + .01f, shadow.transform.localScale.y + .01f, 0);
             yield return null;
         }
         if((Vector2)leg.transform.position == stompPlace) 
@@ -73,14 +77,18 @@ public class BossLeg : MonoBehaviour
         while (leg.transform.position != originalSpot)
         {
             leg.transform.position = Vector2.MoveTowards(leg.transform.position, originalSpot, .1f);
+            shadow.transform.localScale = new Vector3(shadow.transform.localScale.x - .1f, shadow.transform.localScale.y - .1f, 0);
+
             yield return null;
         }
         if (leg.transform.position == originalSpot)
         {
+            
             Debug.Log("Finished");
             NewPlace();
         }
-
+       // Destroy(shadow);
+        ///shadow = null;
     }
 
 

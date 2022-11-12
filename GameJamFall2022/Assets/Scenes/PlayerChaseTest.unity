@@ -138,6 +138,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: Ammo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: AmmoCount
+      value: 1000000
+      objectReference: {fileID: 0}
     - target: {fileID: 5182769023083772907, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -566,7 +574,7 @@ MonoBehaviour:
   movementRange: 0
   player: {fileID: 0}
   interval: 5
-  shadowPrefab: {fileID: 0}
+  shadowPrefab: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
   shadow: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
 --- !u!212 &941972255
 SpriteRenderer:
@@ -725,7 +733,7 @@ MonoBehaviour:
   movementRange: 0
   player: {fileID: 0}
   interval: 18
-  shadowPrefab: {fileID: 0}
+  shadowPrefab: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
   shadow: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
 --- !u!212 &999199353
 SpriteRenderer:
@@ -891,11 +899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2307228213763694453, guid: 0ec931e8d6ba8074d8bdad1cc2b0a476, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.74
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 2307228213763694453, guid: 0ec931e8d6ba8074d8bdad1cc2b0a476, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.55
+      value: -7.24
       objectReference: {fileID: 0}
     - target: {fileID: 2307228213763694453, guid: 0ec931e8d6ba8074d8bdad1cc2b0a476, type: 3}
       propertyPath: m_LocalPosition.z
