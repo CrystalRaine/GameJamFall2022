@@ -8,23 +8,15 @@ public class PlayerController : MonoBehaviour
     public float Acceleration = .5f;
     public float Damping = 1;
     private Vector2 VelocityVector;
-<<<<<<< Updated upstream
     private SpriteRenderer sprite;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-=======
 
-    void Start()
-    {
-
->>>>>>> Stashed changes
     }
-
     void Update()
     {
-<<<<<<< Updated upstream
         if (Input.GetAxis("Horizontal") > 0)
         {
             sprite.flipX = false;
@@ -61,7 +53,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(VelocityVector * Time.deltaTime);
-=======
         VelocityVector += 
             new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized
             * Time.deltaTime * Acceleration;
@@ -71,6 +62,5 @@ public class PlayerController : MonoBehaviour
             VelocityVector *= (MaxVelocity / VelocityVector.magnitude);
 
         transform.Translate(VelocityVector);
->>>>>>> Stashed changes
     }
 }

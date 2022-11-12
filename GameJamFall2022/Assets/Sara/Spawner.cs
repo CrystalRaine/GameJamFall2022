@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-<<<<<<< Updated upstream
     public GameObject spawnType;
     // Start is called before the first frame update
     void Start()
@@ -12,19 +11,9 @@ public class Spawner : MonoBehaviour
         InvokeRepeating("Spawn", 0, 5);
     }
 
-    public void Spawn() 
+    public void Spawn()
     {
         GameObject go = GameObject.Instantiate(spawnType);
-=======
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    public void Spawn() 
-    { 
-        
->>>>>>> Stashed changes
     }
 }
