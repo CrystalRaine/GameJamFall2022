@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Color Change
+    uniqueID: 3439191837
+    locked: 0
+  - name: Outlines
+    uniqueID: 262528049
+    locked: 0
