@@ -17,10 +17,10 @@ public class GrapeshotCreator : MonoBehaviour
         {
             GameObject inst = GameObject.Instantiate(particle);
             
-            Vector3 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position).normalized * speed;
+            Vector3 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position);
             dir = Quaternion.AngleAxis(Random.Range(-spreadDegrees/2, spreadDegrees / 2), Vector3.forward) * dir;
-            
-            inst.GetComponent<Rigidbody2D>().velocity = dir;
+
+            inst.GetComponent<Rigidbody2D>().velocity = dir / dir.magnitude * speed;
             inst.transform.Rotate(new Vector3(0, 0, Vector3.Angle(new Vector3(0, 1, 0), dir)));
             
             inst.transform.position = gameObject.transform.position;
