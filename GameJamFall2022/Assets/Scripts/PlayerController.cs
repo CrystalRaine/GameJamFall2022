@@ -46,6 +46,12 @@ public class PlayerController : MonoBehaviour
 
         VelocityVector += accelerationVector;
 
+        if(VelocityVector.magnitude >= MaxVelocity) // if above max velocity
+        {
+            VelocityVector.Normalize();             // set velocity to max velocity
+            VelocityVector *= MaxVelocity;
+        }
+
         transform.Translate(VelocityVector * Time.deltaTime);
     }
 }
