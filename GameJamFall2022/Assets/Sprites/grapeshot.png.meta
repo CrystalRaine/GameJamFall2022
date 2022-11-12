@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 240319cff99beee468668f3287fbfe37
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: 44d3f1534e0eef045bc08fa8d44b7912
-=======
-guid: 240319cff99beee468668f3287fbfe37
-<<<<<<< Updated upstream
->>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
-=======
->>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
->>>>>>> Stashed changes
-=======
-guid: 240319cff99beee468668f3287fbfe37
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
-=======
-guid: 240319cff99beee468668f3287fbfe37
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -53,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -71,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -82,15 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,50 +94,13 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
-=======
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
->>>>>>> Stashed changes
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
->>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
-=======
->>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
->>>>>>> Stashed changes
-=======
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
-=======
->>>>>>> fd3a83beb6ca6daa0278c1182d785e5990307d72
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []

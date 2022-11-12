@@ -252,11 +252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf34dcc5a518de94d84fc5b1d9f2ac48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmmoCount: 0
+  AmmoCount: 50
   Arm: {fileID: 0}
   Strawberry: {fileID: 6926478798680878292, guid: a56d374b3c1d22e45817a03635ad577f, type: 3}
   Grapeshot: {fileID: 7950195705904260744, guid: 296c4eba797fa8f46ad38cd02f43bd92, type: 3}
   OrangeMarmalade: {fileID: 0}
   Pepper: {fileID: 0}
   Ammo: 1
-  cooldown: 10
+  cooldown: 0.25

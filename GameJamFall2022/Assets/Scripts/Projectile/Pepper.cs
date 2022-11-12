@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Strawberry : MonoBehaviour
+public class Pepper : MonoBehaviour
 {
     public float Velocity;
 
