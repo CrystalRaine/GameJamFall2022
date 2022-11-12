@@ -45,6 +45,9 @@ TagManager:
   - name: Color Change
     uniqueID: 3439191837
     locked: 0
+  - name: Projectile
+    uniqueID: 4025746785
+    locked: 0
   - name: Outlines
     uniqueID: 262528049
     locked: 0
