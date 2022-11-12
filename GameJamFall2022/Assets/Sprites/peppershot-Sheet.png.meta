@@ -1,8 +1,12 @@
 fileFormatVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: 37f928472604528478f3af264de1efc6
 =======
 guid: 041ea47b773af1e44a0a42b27f0bcf5d
+>>>>>>> Stashed changes
+=======
+guid: 7dda158cabca7a14e99de6da50170c58
 >>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
@@ -38,7 +42,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> Stashed changes
 =======
     filterMode: 1
 >>>>>>> Stashed changes
@@ -51,7 +59,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> Stashed changes
 =======
   spriteMode: 1
 >>>>>>> Stashed changes
@@ -83,7 +95,11 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> Stashed changes
 =======
     textureCompression: 1
 >>>>>>> Stashed changes
@@ -117,6 +133,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
   spriteSheet:
     serializedVersion: 2
 <<<<<<< Updated upstream
@@ -229,6 +246,23 @@ TextureImporter:
 =======
     sprites: []
 >>>>>>> Stashed changes
+=======
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> Stashed changes
     outline: []
     physicsShape: []
     bones: []
@@ -240,12 +274,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     nameFileIdTable:
       peppershot-Sheet_1: -590110554
       peppershot-Sheet_4: -71328365
       peppershot-Sheet_3: 1862935928
       peppershot-Sheet_2: -672581832
       peppershot-Sheet_0: 56583612
+=======
+    nameFileIdTable: {}
+>>>>>>> Stashed changes
 =======
     nameFileIdTable: {}
 >>>>>>> Stashed changes
