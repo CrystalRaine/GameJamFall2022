@@ -3,7 +3,11 @@ fileFormatVersion: 2
 guid: 44d3f1534e0eef045bc08fa8d44b7912
 =======
 guid: 240319cff99beee468668f3287fbfe37
+<<<<<<< Updated upstream
 >>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
+=======
+>>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +123,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
 >>>>>>> 50ba1f135ec390258c1ed902cd86f0704a22401d
+=======
+>>>>>>> 4dd2c81f8aeb1739573cdefd8a33ad96febffc6e
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []
