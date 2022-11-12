@@ -8,10 +8,10 @@ public class Strawberry : MonoBehaviour
 
     void Start()
     {
-        Vector3 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position).normalized * Velocity;
+        Vector2 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position).normalized * Velocity;
         GetComponent<Rigidbody2D>().velocity = dir;
-        transform.Rotate(new Vector3(0, 0, Vector3.Angle(new Vector3(0, 1, 0), dir)));
-
+        transform.Rotate(new Vector3(0, 0, Vector3.Angle(new Vector2(1, 0), dir)));
+        //transform.rotation = Quaternion.LookRotation(dir);
         transform.position = gameObject.transform.position;
     }
 }
