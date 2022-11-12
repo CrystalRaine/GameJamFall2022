@@ -26,7 +26,16 @@ public class GunScript : MonoBehaviour
     void Update()
     {
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-        //Arm.transform.forward = aimVector;
+
+        var dot = Vector2.Dot(Vector2.right, aimVector);
+
+        if (dot > 0)
+            transform.localScale = new Vector3(1, 1);
+        else if (dot < 0)
+            transform.localScale = new Vector3(-1, 1);
+
+        if (Arm != null)
+            Arm.transform.right = aimVector * dot / Mathf.Abs(dot);
 
         if (Input.GetMouseButton(0) && currentCooldown <= 0)
         {

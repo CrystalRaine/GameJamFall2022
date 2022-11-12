@@ -16,22 +16,22 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            sprite.flipX = false;
-            foreach (Transform child in transform)
-            {
-                child.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-            }
-        }
-        else if (Input.GetAxis("Horizontal") < 0)
-        {
-            sprite.flipX = true;
-            foreach (Transform child in transform)
-            {
-                child.gameObject.GetComponent<SpriteRenderer>().flipX = true;
-            }
-        }
+        //if (Input.GetAxis("Horizontal") > 0)
+        //{
+        //    sprite.flipX = false;
+        //    foreach (Transform child in transform)
+        //    {
+        //        child.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        //    }
+        //}
+        //else if (Input.GetAxis("Horizontal") < 0)
+        //{
+        //    sprite.flipX = true;
+        //    foreach (Transform child in transform)
+        //    {
+        //        child.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        //    }
+        //}
 
         var mag = VelocityVector.magnitude * (1 - Damping * Time.deltaTime);
 
