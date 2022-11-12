@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrapeshotCreator : MonoBehaviour
+public class GrapeshotCreator : Projectile
 {
     public GameObject particle;
     public int count;
