@@ -8,10 +8,13 @@ public class FloorGeneration : MonoBehaviour
     void Start()
     {
         
+<<<<<<< Updated upstream
 
 
 
 
+=======
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
