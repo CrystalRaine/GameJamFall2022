@@ -1,5 +1,13 @@
 using UnityEngine;
 
+public enum AmmoType
+{
+    STRAWBERRY,
+    GRAPESHOT,
+    MARMALADE,
+    PEPPER
+}
+
 public class GunScript : MonoBehaviour
 {
     public int AmmoCount;
@@ -15,14 +23,6 @@ public class GunScript : MonoBehaviour
     public float cooldown;
     private float currentCooldown;
 
-    public enum AmmoType
-    {
-        STRAWBERRY,
-        GRAPESHOT,
-        MARMALADE,
-        PEPPER
-    }
-
     void Update()
     {
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
@@ -37,8 +37,9 @@ public class GunScript : MonoBehaviour
         if (Arm != null)
             Arm.transform.right = aimVector * dot / Mathf.Abs(dot);
 
-        if (Input.GetMouseButton(0) && currentCooldown <= 0)
+        if (Input.GetMouseButton(0) && currentCooldown <= 0 && AmmoCount > 0)
         {
+            AmmoCount--;
             currentCooldown = cooldown;
             Instantiate(
                 Ammo switch
@@ -50,5 +51,21 @@ public class GunScript : MonoBehaviour
                 }, transform.position, Quaternion.identity);
         }
         currentCooldown -= Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Jam")
+        {
+            var item = collision.gameObject.GetComponent<JamItem>();
+
+            if (Ammo != item.Ammo)
+                AmmoCount = 0;
+
+            Ammo = item.Ammo;
+            AmmoCount += item.AmmoCount;
+
+            Destroy(collision.gameObject);
+        }
     }
 }
