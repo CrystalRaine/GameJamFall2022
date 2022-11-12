@@ -4,16 +4,28 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject spawnType;
+    public GameObject[] spawnTypes;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 0, 5);
+        InvokeRepeating("SpawnBread", 0, 5);
+        InvokeRepeating("SpawnCrumb", 5, 15);
     }
 
-    public void Spawn()
+    public void SpawnBread()
     {
-        GameObject go = GameObject.Instantiate(spawnType, this.transform.position, Quaternion.identity);
-
+        int num = 1;
+        for(int i = 0; i < num; i++) 
+        {
+            GameObject go = GameObject.Instantiate(spawnTypes[0], this.transform.position, Quaternion.identity);
+        }
+    }
+    public void SpawnCrumb()
+    {
+        int num = 5;
+        for (int i = 0; i < num; i++)
+        {
+            GameObject go = GameObject.Instantiate(spawnTypes[1], this.transform.position, Quaternion.identity);
+        }
     }
 }
