@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum AmmoType
@@ -21,18 +22,33 @@ public class GunScript : MonoBehaviour
 
     public AmmoType Ammo;
 
-    public float cooldown;
+    public Dictionary<AmmoType, float> Cooldowns;
+
     private float currentCooldown;
+
+    private void Start()
+    {
+        Cooldowns = new Dictionary<AmmoType, float>() 
+        {
+            {AmmoType.STRAWBERRY, 2},
+            {AmmoType.GRAPESHOT, 4},
+            {AmmoType.MARMALADE, 0},
+            {AmmoType.PEPPER, .5f},
+        };
+    }
 
     void Update()
     {
-        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Ammo switch
+        var color = Ammo switch
         {
             AmmoType.STRAWBERRY => new Color(0.8f, 0.3f, 0.3f, 1),
             AmmoType.GRAPESHOT => new Color(0.6f, 0.3f, 0.5f, 1),
             AmmoType.MARMALADE => new Color(1f, 165f / 255f, 0f, 1),
             AmmoType.PEPPER => new Color(1f, 43f / 255f, 0f, 1)
         };
+
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
+        gameObject.transform.GetChild(1).GetChild(0).GetComponent<SpriteRenderer>().color = color;
 
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
 
@@ -49,7 +65,7 @@ public class GunScript : MonoBehaviour
         if (Input.GetMouseButton(0) && currentCooldown <= 0 && AmmoCount > 0)
         {
             AmmoCount--;
-            currentCooldown = cooldown;
+            currentCooldown = Cooldowns[Ammo];
             Instantiate(
                 Ammo switch
                 {

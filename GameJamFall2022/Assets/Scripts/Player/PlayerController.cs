@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float Damping = 1;
     private Vector2 VelocityVector;
     private SpriteRenderer sprite;
+    public int health = 10;
 
     void Start()
     {

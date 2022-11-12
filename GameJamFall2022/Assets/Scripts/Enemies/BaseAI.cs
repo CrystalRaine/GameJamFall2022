@@ -14,7 +14,9 @@ public class BaseAI : MonoBehaviour
     public float minY = -4.5f;
     public float movementRange = 3;
     public float step = .005f;
+    public int health = 2;
     public GameObject player;
+    public int attackCooldown = 300;
     private void Start()
     {
         currentGoal = GetRandomPositionNearSelf();
@@ -41,9 +43,20 @@ public class BaseAI : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, enemy.transform.position) < radius) {  return true; } else { return false; }
     }
+    public void AttackPlayer() 
+    {
+        if(attackCooldown <= 0) 
+        {
+            player.GetComponent<PlayerController>().health--;
+            attackCooldown = 300;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if(attackCooldown > 0) { attackCooldown--; }
+        if(NearPlayer(1.5f)) { AttackPlayer(); }
         if (NearPlayer(8))
         {
             currentGoal = player.transform.position;
@@ -60,12 +73,15 @@ public class BaseAI : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collided");
-        if(collision.gameObject.GetComponent<Projectile>())
+        Debug.Log("Collision");
+        if (collision.gameObject.tag == "Projectile")
         {
-            Debug.Log("Collided with projectile");
+            Destroy(collision.gameObject);
+            health--;
+            if (health <= 0) { Destroy(this.gameObject); }
         }
     }
+
 }

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 262528049
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e38a08b7a6c38f5459d6dd22a46b829e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -363,7 +363,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 262528049
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9f931d6477b98b84482cc47a5bc84bd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -459,7 +459,7 @@ MonoBehaviour:
   Arm: {fileID: 766961158}
   Strawberry: {fileID: 6926478798680878292, guid: a56d374b3c1d22e45817a03635ad577f, type: 3}
   Grapeshot: {fileID: 7950195705904260744, guid: 296c4eba797fa8f46ad38cd02f43bd92, type: 3}
-  OrangeMarmalade: {fileID: 0}
+  OrangeMarmalade: {fileID: 7701400707771005000, guid: c6d4ae31649e27b4cb47a7af040a2ded, type: 3}
   Pepper: {fileID: 2353521560024295628, guid: 11d001126971c104ea8a534e1fcfe96d, type: 3}
   Ammo: 0
   cooldown: 0.1
