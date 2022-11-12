@@ -5,12 +5,16 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] spawnTypes;
+    public bool active;
     public float health = 15;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnBread", 0, 5);
-        InvokeRepeating("SpawnCrumb", 5, 15);
+        if(active) 
+        {
+            InvokeRepeating("SpawnBread", 0, 5);
+            InvokeRepeating("SpawnCrumb", 5, 15);
+        }
     }
 
     public void SpawnBread()
@@ -32,7 +36,6 @@ public class Spawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision");
         if (collision.gameObject.tag == "Projectile")
         {
             Destroy(collision.gameObject);

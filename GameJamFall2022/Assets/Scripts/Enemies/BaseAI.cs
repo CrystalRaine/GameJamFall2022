@@ -75,7 +75,6 @@ public class BaseAI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision");
         if (collision.gameObject.tag == "Projectile")
         {
             Destroy(collision.gameObject);
