@@ -8,14 +8,20 @@ public class PlayerController : MonoBehaviour
     public float Acceleration = .5f;
     public float Damping = 1;
     private Vector2 VelocityVector;
+    private SpriteRenderer sprite;
 
     void Start()
     {
-
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
+        if (Input.GetAxis("Horizontal") > 0)
+            sprite.flipX = false;
+        else if (Input.GetAxis("Horizontal") < 0)
+            sprite.flipX = true;
+
         var mag = (VelocityVector.magnitude - Damping * Time.deltaTime);
 
         if (mag > 0)
