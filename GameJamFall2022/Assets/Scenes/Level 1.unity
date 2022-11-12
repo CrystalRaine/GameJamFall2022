@@ -234,6 +234,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5182769023083772909, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182769023083772909, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_Color.g
+      value: 0.16776651
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182769023083772909, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
       value: bimbert-test-glass
