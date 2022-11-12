@@ -799,6 +799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Strawberry
       objectReference: {fileID: 0}
+    - target: {fileID: 6926478798680878292, guid: a56d374b3c1d22e45817a03635ad577f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56d374b3c1d22e45817a03635ad577f, type: 3}
 =======
