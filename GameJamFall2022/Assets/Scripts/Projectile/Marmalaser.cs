@@ -14,7 +14,7 @@ public class Marmalaser : MonoBehaviour
         GameObject inst = GameObject.Instantiate(laser);
         Vector3 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position);
         inst.transform.Rotate(new Vector3(0, 0, Vector3.Angle(new Vector3(0, 1, 0), dir)));
-
+        
 
     }
 }
