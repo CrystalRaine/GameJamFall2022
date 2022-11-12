@@ -26,25 +26,13 @@ public class GunScript : MonoBehaviour
 
     void Update()
     {
-
-        switch(Ammo)
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Ammo switch
         {
-            case AmmoType.STRAWBERRY:
-                gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.8f,0.3f,0.3f, 1);
-                break;
-            case AmmoType.GRAPESHOT:
-                gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.6f, 0.3f, 0.5f, 1);
-                break;
-            case AmmoType.MARMALADE:
-                gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1f, 165f / 255f, 0f,1 );
-                break;
-            case AmmoType.PEPPER:
-                gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1f, 43f / 255f, 0f, 1);
-                break;
+            AmmoType.STRAWBERRY => new Color(0.8f, 0.3f, 0.3f, 1),
+            AmmoType.GRAPESHOT => new Color(0.6f, 0.3f, 0.5f, 1),
+            AmmoType.MARMALADE => new Color(1f, 165f / 255f, 0f, 1),
+            AmmoType.PEPPER => new Color(1f, 43f / 255f, 0f, 1)
         };
-
-
-
 
         Vector2 aimVector = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GrapeshotCreator : MonoBehaviour
 {
-
     public GameObject particle;
     public int count;
     public float speed;
@@ -17,10 +16,11 @@ public class GrapeshotCreator : MonoBehaviour
         {
             GameObject inst = GameObject.Instantiate(particle);
             
-            Vector3 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position);
+            Vector2 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position).normalized;
+
             dir = Quaternion.AngleAxis(Random.Range(-spreadDegrees/2, spreadDegrees / 2), Vector3.forward) * dir;
 
-            inst.GetComponent<Rigidbody2D>().velocity = dir / dir.magnitude * speed;
+            inst.GetComponent<Rigidbody2D>().velocity = (dir / dir.magnitude) * speed;
             inst.transform.Rotate(new Vector3(0, 0, Vector3.Angle(new Vector3(0, 1, 0), dir)));
             
             inst.transform.position = gameObject.transform.position;
