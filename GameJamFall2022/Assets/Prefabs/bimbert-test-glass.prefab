@@ -388,9 +388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e48f4d1549c2a45a36117e731582ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxVelocity: 2
-  Acceleration: 5
+  MaxVelocity: 9
+  Acceleration: 9
   Damping: 4
+  health: 10
 --- !u!61 &5182769023310963806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -462,7 +463,6 @@ MonoBehaviour:
   OrangeMarmalade: {fileID: 7701400707771005000, guid: c6d4ae31649e27b4cb47a7af040a2ded, type: 3}
   Pepper: {fileID: 2353521560024295628, guid: 11d001126971c104ea8a534e1fcfe96d, type: 3}
   Ammo: 0
-  cooldown: 0.1
 --- !u!50 &1550750157
 Rigidbody2D:
   serializedVersion: 4

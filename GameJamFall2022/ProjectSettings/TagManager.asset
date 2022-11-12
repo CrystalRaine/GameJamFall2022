@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jam
   - Projectile
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Outlines
     uniqueID: 262528049
+    locked: 0
+  - name: Boss
+    uniqueID: 131222205
     locked: 0
