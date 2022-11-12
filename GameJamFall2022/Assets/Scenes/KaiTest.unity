@@ -300,6 +300,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: Ammo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: cooldown
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
       value: bimbert-test-glass
