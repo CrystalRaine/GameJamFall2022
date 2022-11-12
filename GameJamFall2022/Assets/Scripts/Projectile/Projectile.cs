@@ -7,6 +7,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public float damage;
     public BoxCollider2D bc;
     // Start is called before the first frame update
     void Start()

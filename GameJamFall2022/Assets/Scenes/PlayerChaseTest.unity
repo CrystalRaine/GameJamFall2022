@@ -566,7 +566,7 @@ MonoBehaviour:
   movementRange: 0
   player: {fileID: 0}
   interval: 5
-  shadowPrefab: {fileID: 0}
+  shadowPrefab: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
   shadow: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
 --- !u!212 &941972255
 SpriteRenderer:
@@ -725,7 +725,7 @@ MonoBehaviour:
   movementRange: 0
   player: {fileID: 0}
   interval: 18
-  shadowPrefab: {fileID: 0}
+  shadowPrefab: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
   shadow: {fileID: 6497767044794311215, guid: 17046e3c38986b74e8388394ca7183ed, type: 3}
 --- !u!212 &999199353
 SpriteRenderer:
