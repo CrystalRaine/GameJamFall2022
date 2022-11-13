@@ -7,6 +7,8 @@ public class HealthBar : MonoBehaviour
     public PlayerController player;
     public Canvas loseScreen;
 
+    public bool won = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         text.text = "Health: " + player.health;
-        if(player.health < 0)
+        if(player.health <= 0 && !won)
         {
             loseScreen.gameObject.SetActive(true);
         }

@@ -935,7 +935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28524d1a0a2ef404fa0e4839fa2761dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goesTo: Level 1
+  goesTo: Tutorial
 --- !u!114 &710337101
 MonoBehaviour:
   m_ObjectHideFlags: 0
