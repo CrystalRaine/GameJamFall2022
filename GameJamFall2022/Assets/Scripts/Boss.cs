@@ -35,11 +35,11 @@ public class Boss : MonoBehaviour
             if(bossLeg != null && bossHand == null) 
             {
                 bossLeg.GetComponent<BossLeg>().Die();
-                
+                CreateHand();
             }
             else 
             {
-                CreateHand();
+                
             }
 
         }
@@ -48,7 +48,7 @@ public class Boss : MonoBehaviour
             if (bossHand != null)
             {
                 bossHand.GetComponent<BossLeg>().Die();
-                
+                bossHand = null;
             }
             if(bossHand == null && bossLeg == null) 
             {
