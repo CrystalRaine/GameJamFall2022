@@ -38,13 +38,30 @@ public class Spawner : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
-            Destroy(collision.gameObject);
             if (collision.gameObject.GetComponent<Projectile>().destroyOnHit)
             {
                 Destroy(collision.gameObject);
             }
+            Pepper p;
+            if (collision.gameObject.TryGetComponent<Pepper>(out p))
+            {
+                gameObject.AddComponent<DOT>();
+            }
             health -= collision.gameObject.GetComponent<Projectile>().damage;
             if (health <= 0) { Destroy(this.gameObject); }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            MarmalaserSection p;
+
+            if (collision.gameObject.TryGetComponent<MarmalaserSection>(out p))
+            {
+                health -= collision.gameObject.GetComponent<Projectile>().damage;
+            }
         }
     }
 }

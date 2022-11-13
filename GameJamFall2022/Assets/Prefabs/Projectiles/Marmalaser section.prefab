@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7701400707771005012}
   - component: {fileID: 1338161785607361368}
   - component: {fileID: -6344654729031555157}
-  - component: {fileID: 3076330890634952399}
   m_Layer: 0
   m_Name: Marmalaser section
   m_TagString: Projectile
@@ -101,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63f4296304e984a819d5163db43fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 0.04
   destroyOnHit: 0
   sprites:
   - {fileID: -1435602249, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
@@ -172,19 +171,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.25, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &3076330890634952399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701400707771005000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d27628feb556746a3fcfd55051d5a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0.5
-  destroyOnHit: 0

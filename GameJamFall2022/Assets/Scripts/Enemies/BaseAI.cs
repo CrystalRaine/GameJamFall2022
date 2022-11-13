@@ -85,7 +85,6 @@ public class BaseAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
-            Destroy(collision.gameObject);
             if (collision.gameObject.GetComponent<Projectile>().destroyOnHit) 
             {
                 Destroy(collision.gameObject);
@@ -95,6 +94,20 @@ public class BaseAI : MonoBehaviour
             if (collision.gameObject.name == "Peppershot")
             {
                 burning = true;
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            MarmalaserSection p;
+
+            if (collision.gameObject.TryGetComponent<MarmalaserSection>(out p))
+            {
+                health -= collision.gameObject.GetComponent<Projectile>().damage;
+                if (health <= 0) { Destroy(this.gameObject); }
             }
         }
     }
