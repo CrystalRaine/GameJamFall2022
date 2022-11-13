@@ -388,8 +388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e48f4d1549c2a45a36117e731582ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxVelocity: 9
-  Acceleration: 9
+  MaxVelocity: 10
+  Acceleration: 11
   Damping: 4
   health: 10
 --- !u!61 &5182769023310963806
