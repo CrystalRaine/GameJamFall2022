@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+
 public class HealthBar : MonoBehaviour
 {
     public TMP_Text text;
@@ -12,6 +11,7 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         loseScreen.gameObject.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         text.text = "Health: " + player.health;
     }
 
