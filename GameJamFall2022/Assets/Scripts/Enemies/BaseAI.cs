@@ -8,6 +8,7 @@ public class BaseAI : MonoBehaviour
     public GameObject enemy;
     Vector3 currentGoal;
 
+    public bool burning;
     public float maxX = 10;
     public float maxY = 4.5f;
     public float minX = -10;
@@ -62,6 +63,13 @@ public class BaseAI : MonoBehaviour
             currentGoal = player.transform.position;
         }
         
+        if (burning == true)
+        {
+            health--;
+            if (health <= 0) { Destroy(this.gameObject); }
+            burning = false;
+        }
+
         if (Vector3.Distance(enemy.transform.position, currentGoal) >= .001)
         {
             MoveToGoal(currentGoal);
@@ -83,6 +91,10 @@ public class BaseAI : MonoBehaviour
             }
             health-= collision.gameObject.GetComponent<Projectile>().damage;
             if (health <= 0) { Destroy(this.gameObject); }
+            if (collision.gameObject.name == "Peppershot")
+            {
+                burning = true;
+            }
         }
     }
 
