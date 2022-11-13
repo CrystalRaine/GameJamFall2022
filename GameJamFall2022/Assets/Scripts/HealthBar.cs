@@ -12,7 +12,7 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         loseScreen.gameObject.SetActive(false);
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         text.text = "Health: " + player.health;
     }
 
