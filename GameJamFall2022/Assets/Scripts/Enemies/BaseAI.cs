@@ -8,13 +8,14 @@ public class BaseAI : MonoBehaviour
     public GameObject enemy;
     Vector3 currentGoal;
 
+    public bool burning;
     public float maxX = 10;
     public float maxY = 4.5f;
     public float minX = -10;
     public float minY = -4.5f;
     public float movementRange = 3;
     public float step = .005f;
-    public int health = 2;
+    public float health = 2;
     public GameObject player;
     public int attackCooldown = 300;
     private void Start()
@@ -62,6 +63,13 @@ public class BaseAI : MonoBehaviour
             currentGoal = player.transform.position;
         }
         
+        if (burning == true)
+        {
+            health--;
+            if (health <= 0) { Destroy(this.gameObject); }
+            burning = false;
+        }
+
         if (Vector3.Distance(enemy.transform.position, currentGoal) >= .001)
         {
             MoveToGoal(currentGoal);
@@ -75,12 +83,32 @@ public class BaseAI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision");
         if (collision.gameObject.tag == "Projectile")
         {
-            Destroy(collision.gameObject);
-            health--;
+            if (collision.gameObject.GetComponent<Projectile>().destroyOnHit) 
+            {
+                Destroy(collision.gameObject);
+            }
+            health-= collision.gameObject.GetComponent<Projectile>().damage;
             if (health <= 0) { Destroy(this.gameObject); }
+            if (collision.gameObject.name == "Peppershot")
+            {
+                burning = true;
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            MarmalaserSection p;
+
+            if (collision.gameObject.TryGetComponent<MarmalaserSection>(out p))
+            {
+                health -= collision.gameObject.GetComponent<Projectile>().damage * Time.deltaTime;
+                if (health <= 0) { Destroy(this.gameObject); }
+            }
         }
     }
 

@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 808124426760530556}
   - component: {fileID: -8746725158041936223}
   - component: {fileID: -172861881257296059}
-  m_Layer: 0
+  - component: {fileID: 8951030104381595197}
+  - component: {fileID: 4803841975077140046}
+  - component: {fileID: 3804663332613290877}
+  m_Layer: 1
   m_Name: GrapeshotParticle
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -120,3 +123,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetimeSeconds: 0.7
+--- !u!58 &8951030104381595197
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615152623603466488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
+--- !u!114 &4803841975077140046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615152623603466488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d27628feb556746a3fcfd55051d5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.5
+  destroyOnHit: 1
+--- !u!58 &3804663332613290877
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615152623603466488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.05

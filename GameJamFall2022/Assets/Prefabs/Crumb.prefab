@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5256991448485202098}
   - component: {fileID: 5256991448485202096}
   - component: {fileID: 82795060632492789}
-  m_Layer: 0
+  - component: {fileID: 2152001676556371669}
+  m_Layer: 2
   m_Name: Crumb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 262528049
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 910162ddb720d0b45828f4681afe5d97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,14 +100,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5256991448485202099}
+  burning: 0
   maxX: 10
   maxY: 4.5
   minX: -10
   minY: -4.5
   movementRange: 3
-  step: 0.007
+  step: 0.01
   health: 1
   player: {fileID: 0}
+  attackCooldown: 300
 --- !u!61 &82795060632492789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +136,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!50 &2152001676556371669
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5256991448485202099}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

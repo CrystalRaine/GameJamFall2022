@@ -14,7 +14,7 @@ public class FloorGeneration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Tilemap floor = gameObject.transform.GetComponentInChildren<Tilemap>();
+        Tilemap floor = gameObject.transform.GetComponentsInChildren<Tilemap>()[1];
         floor.ClearAllTiles();
 
         for (int i = -sizeX; i < sizeX; i++)

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pepper : MonoBehaviour
+public class Pepper : Projectile
 {
     public float Velocity;
 

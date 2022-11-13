@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class MarmalaserSection : MonoBehaviour
+public class MarmalaserSection : Projectile
 {
     public List<Sprite> sprites;
     public List<Sprite> splash;
