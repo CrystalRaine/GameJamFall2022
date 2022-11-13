@@ -41,7 +41,6 @@ public class Spawner : MonoBehaviour
 
     public void Spawn(int i)
     {
-        Debug.Log(i);
         for (int j = 0; j < amount[i]; j++)
             Instantiate(spawnTypes[i], this.transform.position, Quaternion.identity);
     }
