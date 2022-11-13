@@ -1569,6 +1569,8 @@ GameObject:
   - component: {fileID: 1790976529}
   - component: {fileID: 1790976530}
   - component: {fileID: 1790976531}
+  - component: {fileID: 1790976533}
+  - component: {fileID: 1790976532}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1675,7 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28524d1a0a2ef404fa0e4839fa2761dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goesTo: Level2
+  goesTo: Level 2
 --- !u!114 &1790976528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,6 +1730,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goesTo: Tutorial
+--- !u!114 &1790976532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790976522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28524d1a0a2ef404fa0e4839fa2761dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goesTo: Level 5
+--- !u!114 &1790976533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790976522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28524d1a0a2ef404fa0e4839fa2761dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goesTo: Level 4
 --- !u!1 &2095254003
 GameObject:
   m_ObjectHideFlags: 0
