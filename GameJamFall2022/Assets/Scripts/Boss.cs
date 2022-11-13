@@ -54,6 +54,7 @@ public class Boss : MonoBehaviour
                 {
                     bossHand.GetComponent<BossLeg>().Die();
                     Debug.Log("You win!");
+
                     phase = BossPhase.FINISHED;
                 }
             }

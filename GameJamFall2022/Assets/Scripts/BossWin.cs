@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossWin : MonoBehaviour
 { 
-    public GameObject[] spawnersRemaining;
+    public GameObject boss;
     // Start is called before the first frame update
 
     private void Start()
@@ -14,15 +14,7 @@ public class BossWin : MonoBehaviour
 
     public bool isFinished()
     {
-        for (int i = 0; i < spawnersRemaining.Length; i++)
-        {
-
-            if (spawnersRemaining[i] != null)
-            {
-                return false;
-            }
-        }
-        return true;
+        return boss.GetComponent<Boss>().phase == BossPhase.FINISHED;
     }
 
     private void Update()
