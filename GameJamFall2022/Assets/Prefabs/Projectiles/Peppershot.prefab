@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2236411010639883415}
   - component: {fileID: 4444937060916772669}
   - component: {fileID: 6023621208580044212}
+  - component: {fileID: 7201497244379309408}
   m_Layer: 0
   m_Name: Peppershot
   m_TagString: Projectile
@@ -174,3 +175,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!58 &7201497244379309408
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353521560024295628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
