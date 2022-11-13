@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,14 +8,42 @@ public class Spawner : MonoBehaviour
     public GameObject[] spawnTypes;
     public bool active;
     public float health = 15;
+    public float[] time;
+    public int[] amount;
+
+    private List<float> times = new();
+
     // Start is called before the first frame update
     void Start()
     {
         if(active) 
         {
-            InvokeRepeating("SpawnBread", 0, 5);
-            InvokeRepeating("SpawnCrumb", 5, 15);
+            for (int i = 0; i < spawnTypes.Length; i++)
+                times.Add(time[i]);
+                //InvokeRepeating("SpawnBread", 0, 5);
+                //InvokeRepeating("SpawnCrumb", 5, 15);
         }
+    }
+
+    private void Update()
+    {
+        for (int i = 0; i < times.Count; i++)
+        {
+            var v = times[i] = times[i] - Time.deltaTime;
+
+            if (v <= 0)
+            {
+                times[i] = time[i];
+                Spawn(i);
+            }
+        }
+    }
+
+    public void Spawn(int i)
+    {
+        Debug.Log(i);
+        for (int j = 0; j < amount[i]; j++)
+            Instantiate(spawnTypes[i], this.transform.position, Quaternion.identity);
     }
 
     public void SpawnBread()
@@ -25,6 +54,7 @@ public class Spawner : MonoBehaviour
             GameObject go = GameObject.Instantiate(spawnTypes[0], this.transform.position, Quaternion.identity);
         }
     }
+
     public void SpawnCrumb()
     {
         int num = 5;

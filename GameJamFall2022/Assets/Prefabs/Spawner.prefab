@@ -52,6 +52,10 @@ MonoBehaviour:
   - {fileID: 5256991448485202099, guid: 948557b0183d11b41a7c9509582ddee9, type: 3}
   active: 1
   health: 15
+  time:
+  - 5
+  - 20
+  amount: 0100000005000000
 --- !u!212 &2307228213763694450
 SpriteRenderer:
   m_ObjectHideFlags: 0
