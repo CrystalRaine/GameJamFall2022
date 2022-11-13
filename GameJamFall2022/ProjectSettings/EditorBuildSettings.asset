@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 25015f9d12bc326418359215a070b413
@@ -15,18 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: ed2a4d3f24c5c8747bed5fc779fe3792
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: ab1863da34d195b4c9db67a4bea17576
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: f4fea31c80be38a40845ac48b3dbbe31
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 68d7b2020b783ea46a7f3185b06605f6
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 644eab11578d22a40bf0af909545bdf9
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-    guid: 0bbd2d0aa806fbc4bbf7255a544c9fa0
+    path: Assets/Scenes/Level 4.unity
+    guid: a91d0e6763ed97e4d8a91f01ac8b98ee
   - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: a538038d45281b04996827de36d126b0
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
-    guid: a91d0e6763ed97e4d8a91f01ac8b98ee
+    path: Assets/Scenes/BossFight.unity
+    guid: 64b10d97efbe2ce4790a59829bf13d5c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
