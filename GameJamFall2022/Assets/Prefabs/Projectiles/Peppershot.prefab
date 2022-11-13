@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4444937060916772669}
   - component: {fileID: 6023621208580044212}
   - component: {fileID: 7201497244379309408}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Peppershot
   m_TagString: Projectile
   m_Icon: {fileID: 0}

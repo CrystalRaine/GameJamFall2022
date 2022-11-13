@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8951030104381595197}
   - component: {fileID: 4803841975077140046}
   - component: {fileID: 3804663332613290877}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: GrapeshotParticle
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -168,4 +168,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.05

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7561598836437976148}
   - component: {fileID: 5550158067982646583}
   - component: {fileID: 6216995905150291094}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Mr. Slice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7561598836437976151}
+  burning: 0
   maxX: 10
   maxY: 4.5
   minX: -10
