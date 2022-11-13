@@ -77,7 +77,6 @@ public class BaseAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
-            Destroy(collision.gameObject);
             if (collision.gameObject.GetComponent<Projectile>().destroyOnHit) 
             {
                 Destroy(collision.gameObject);
@@ -86,5 +85,4 @@ public class BaseAI : MonoBehaviour
             if (health <= 0) { Destroy(this.gameObject); }
         }
     }
-
 }
