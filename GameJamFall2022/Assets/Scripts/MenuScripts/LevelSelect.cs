@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndLevelOnTrigger : MonoBehaviour
+public class LevelSelect : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,13 +14,5 @@ public class EndLevelOnTrigger : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            
-        }
     }
 }
