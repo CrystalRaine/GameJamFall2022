@@ -14,26 +14,7 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-2:
       value: 570551555d545d0e5c5e5575137b0c44444f4a7b2f7b2335297a4466b3b16469
       flags: 0
-<<<<<<< HEAD
-    RecentlyUsedSceneGuid-4:
-      value: 0505520304065858555e0e27437b5e44464f4c7f2d2b72682f7a1931e0e56769
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 535356025751595a0c565c7416215c4414151e7d7e7d7331787d4930bbe63568
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 0208050255505f0c5b5d092649745a44124f19737d2e76612c2a4531bbb8313d
-      flags: 0
-    RecentlyUsedSceneGuid-7:
-<<<<<<< Updated upstream
-      value: 0505520304065858555e0e27437b5e44464f4c7f2d2b72682f7a1931e0e56769
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 0204075e5506515f595b5e7a41210f444f4e4e727e7f22357e7f1962b0b63668
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 0204075e5506515f595b5e7a41210f444f4e4e727e7f22357e7f1962b0b63668
-=======
+
     RecentlyUsedSceneGuid-3:
       value: 0505520304065858555e0e27437b5e44464f4c7f2d2b72682f7a1931e0e56769
       flags: 0
@@ -42,7 +23,6 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 0655060751515a5d5f5a0f77137b084441151d2e792e25677a701b36b1b76d6a
->>>>>>> 2b09559480ee5aa7bcc6bc61f3090e926de5d169
       flags: 0
     RecentlyUsedSceneGuid-6:
       value: 510404575053505f5c5c0e2143710944474f4b7f757a77652c794a63e0b4656b
@@ -51,8 +31,15 @@ EditorUserSettings:
       value: 535356025751595a0c565c7416215c4414151e7d7e7d7331787d4930bbe63568
       flags: 0
     RecentlyUsedSceneGuid-8:
-=======
->>>>>>> Stashed changes
+      value: 0204075e5506515f595b5e7a41210f444f4e4e727e7f22357e7f1962b0b63668
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 0204075e5506515f595b5e7a41210f444f4e4e727e7f22357e7f1962b0b63668
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 510404575053505f5c5c0e2143710944474f4b7f757a77652c794a63e0b4656b
+      flags: 0
+    RecentlyUsedSceneGuid-7:
       value: 0204075e5506515f595b5e7a41210f444f4e4e727e7f22357e7f1962b0b63668
       flags: 0
     RecentlyUsedSceneGuid-9:
