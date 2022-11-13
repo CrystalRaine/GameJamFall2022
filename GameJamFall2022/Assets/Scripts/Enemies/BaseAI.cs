@@ -85,8 +85,6 @@ public class BaseAI : MonoBehaviour
             if (health <= 0) { Destroy(this.gameObject); }
         }
     }
-<<<<<<< Updated upstream
-=======
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -102,5 +100,4 @@ public class BaseAI : MonoBehaviour
         }
     }
 
->>>>>>> Stashed changes
 }
