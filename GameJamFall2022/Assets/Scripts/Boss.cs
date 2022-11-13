@@ -9,12 +9,14 @@ public class Boss : MonoBehaviour
     public GameObject[] prefabs;
     public GameObject bossLeg;
     public GameObject bossHand;
-    public float legHealth = 5;
+    public float legHealth = 30;
+    public int legInterval;
+    public int handInterval;
     public BossPhase phase = BossPhase.FOOT;
     void Awake()
     {
         bossLeg = GameObject.Instantiate(prefabs[0]);
-        bossLeg.GetComponent<BossLeg>().interval = 4;
+        bossLeg.GetComponent<BossLeg>().interval = legInterval;
         bossLeg.GetComponent<BossLeg>().Begin();
         bossLeg.GetComponent<BossLeg>().boss = this;
 
@@ -24,10 +26,10 @@ public class Boss : MonoBehaviour
     public void CreateHand()
     {
         bossHand = GameObject.Instantiate(prefabs[1]);
-        bossHand.GetComponent<BossLeg>().interval = 2;
+        bossHand.GetComponent<BossLeg>().interval = handInterval;
         bossHand.GetComponent<BossLeg>().boss = this;
         bossHand.GetComponent<BossLeg>().Begin();
-        legHealth = 5;
+        legHealth = 30;
     }
 
     private void Update()

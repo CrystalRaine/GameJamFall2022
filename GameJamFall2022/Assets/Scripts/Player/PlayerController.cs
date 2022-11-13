@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Boss") 
         {
-            this.health -= 5;
+            this.health -= 2;
         }
     }
 }
