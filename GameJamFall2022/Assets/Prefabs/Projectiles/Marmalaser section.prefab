@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7701400707771005012}
   - component: {fileID: 1338161785607361368}
   - component: {fileID: -6344654729031555157}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Marmalaser section
   m_TagString: Projectile
   m_Icon: {fileID: 0}

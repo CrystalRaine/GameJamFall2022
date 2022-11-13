@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5256991448485202098}
   - component: {fileID: 5256991448485202096}
   - component: {fileID: 82795060632492789}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Crumb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5256991448485202099}
+  burning: 0
   maxX: 10
   maxY: 4.5
   minX: -10
