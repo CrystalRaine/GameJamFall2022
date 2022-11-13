@@ -2,27 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
-public enum LegState
-{
-    STOMP,
-    WITHDRAW
-}
 
 public class BossLeg : MonoBehaviour
 {
     public GameObject leg;
     public Vector3 originalSpot;
     public Vector2 stompPlace;
-    public LegState currentState;
     public float movementRange;
     public GameObject player;
     public int interval;
     public GameObject shadowPrefab;
     public GameObject shadow;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         leg = this.gameObject;
         player = GameObject.FindGameObjectWithTag("Player");
