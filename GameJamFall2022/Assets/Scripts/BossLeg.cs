@@ -53,11 +53,8 @@ public class BossLeg : MonoBehaviour
     IEnumerator Disappear() 
     {
         yield return new WaitForSecondsRealtime(2);
-        
-        GameObject.Destroy(this.gameObject);
         boss.bossLeg = null;
-        
-         boss.bossHand = null; 
+        GameObject.Destroy(this.gameObject);
     }
 
     public void NewPlace() 
