@@ -18,6 +18,8 @@ public class BaseAI : MonoBehaviour
     public float health = 2;
     public GameObject player;
     public int attackCooldown = 300;
+    public GameObject deathPhase;
+
     private void Start()
     {
         currentGoal = GetRandomPositionNearSelf();
@@ -79,6 +81,16 @@ public class BaseAI : MonoBehaviour
 
             currentGoal = GetRandomPositionNearSelf();
         }
+
+        Vector2 aimVector = (currentGoal - transform.position).normalized;
+
+        var dot = Vector2.Dot(Vector2.right, aimVector);
+
+        if (dot > 0)
+            transform.localScale = new Vector3(-2, 2);
+        else if (dot < 0)
+            transform.localScale = new Vector3(2, 2);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -90,7 +102,10 @@ public class BaseAI : MonoBehaviour
                 Destroy(collision.gameObject);
             }
             health-= collision.gameObject.GetComponent<Projectile>().damage;
-            if (health <= 0) { Destroy(this.gameObject); }
+            if (health <= 0) { 
+                Instantiate(deathPhase, enemy.transform.position, Quaternion.identity);
+                Destroy(this.gameObject); 
+                }
             if (collision.gameObject.name == "Peppershot")
             {
                 burning = true;
@@ -107,7 +122,10 @@ public class BaseAI : MonoBehaviour
             if (collision.gameObject.TryGetComponent<MarmalaserSection>(out p))
             {
                 health -= collision.gameObject.GetComponent<Projectile>().damage * Time.deltaTime;
-                if (health <= 0) { Destroy(this.gameObject); }
+                if (health <= 0) { 
+                    Instantiate(deathPhase, enemy.transform.position, Quaternion.identity);
+                    Destroy(this.gameObject); 
+                    }
             }
         }
     }

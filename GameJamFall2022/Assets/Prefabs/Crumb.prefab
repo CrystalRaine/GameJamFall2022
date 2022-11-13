@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5256991448485202096}
   - component: {fileID: 82795060632492789}
   - component: {fileID: 2152001676556371669}
+  - component: {fileID: 4297850617383395197}
   m_Layer: 2
   m_Name: Crumb
   m_TagString: Untagged
@@ -110,6 +111,7 @@ MonoBehaviour:
   health: 1
   player: {fileID: 0}
   attackCooldown: 300
+  deathPhase: {fileID: 4572139807664811599, guid: 453538bb2064e9b4f95acc9a0f2137d4, type: 3}
 --- !u!61 &82795060632492789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -157,3 +159,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &4297850617383395197
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5256991448485202099}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52ef2e147f037634993f70927e22a5ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
