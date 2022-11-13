@@ -72,8 +72,8 @@ public class BossLeg : MonoBehaviour
         originalSpot = newOrigin;
         leg.transform.position = originalSpot;
         stompPlace = newStompPlace;
-        
-        
+        shadow = GameObject.Instantiate(shadowPrefab, stompPlace, Quaternion.identity);
+
     }
 
     public void Attack() 
@@ -87,7 +87,7 @@ public class BossLeg : MonoBehaviour
 
     IEnumerator Stomp() 
     {
-        shadow = GameObject.Instantiate(shadowPrefab, stompPlace, Quaternion.identity);
+        
         while ((Vector2)leg.transform.position != stompPlace) 
         {
             leg.transform.position = Vector2.MoveTowards(leg.transform.position, stompPlace, .1f);

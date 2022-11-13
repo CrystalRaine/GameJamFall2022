@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442924240684638034, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
+      propertyPath: AmmoCount
+      value: 1000000
+      objectReference: {fileID: 0}
     - target: {fileID: 5182769023310963803, guid: 091d5a8038715f34c8aa75d049334622, type: 3}
       propertyPath: m_Name
       value: bimbert-test-glass
@@ -526,7 +530,7 @@ MonoBehaviour:
   - {fileID: 1750925018000319068, guid: f06c1b5136b204145b8c4d97e15d6df6, type: 3}
   bossLeg: {fileID: 0}
   bossHand: {fileID: 0}
-  legHealth: 30
+  legHealth: 5
 --- !u!4 &1871499537
 Transform:
   m_ObjectHideFlags: 0

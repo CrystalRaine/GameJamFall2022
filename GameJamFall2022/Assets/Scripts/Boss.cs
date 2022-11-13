@@ -25,7 +25,7 @@ public class Boss : MonoBehaviour
         bossHand.GetComponent<BossLeg>().interval = 2;
         bossHand.GetComponent<BossLeg>().boss = this;
         bossHand.GetComponent<BossLeg>().Begin();
-        legHealth = 30;
+        legHealth = 5;
     }
 
     private void Update()
@@ -35,11 +35,11 @@ public class Boss : MonoBehaviour
             if(bossLeg != null && bossHand == null) 
             {
                 bossLeg.GetComponent<BossLeg>().Die();
-                
+                CreateHand();
             }
             else 
             {
-                CreateHand();
+                
             }
 
         }
@@ -48,6 +48,10 @@ public class Boss : MonoBehaviour
             if (bossHand != null)
             {
                 bossHand.GetComponent<BossLeg>().Die();
+                bossHand = null;
+            }
+            if(bossHand == null && bossLeg == null) 
+            {
                 Debug.Log("You win!");
                 Destroy(this.gameObject);
             }
