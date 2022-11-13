@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEditor.Animations;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 VelocityVector;
     private SpriteRenderer sprite;
     public int health = 10;
+    public Animator bimbertanimator;
+    public Animator jamanimator;
     
     void Start()
     {
@@ -23,6 +26,14 @@ public class PlayerController : MonoBehaviour
         else
             VelocityVector = Vector2.zero;
 
+        if(VelocityVector.magnitude < 1f){
+            bimbertanimator.SetBool("moving", false);
+            jamanimator.SetBool("moving", false);
+        }
+        else{
+            bimbertanimator.SetBool("moving", true);
+            jamanimator.SetBool("moving", true);
+        }
         var accelerationVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized
             * Time.deltaTime * Acceleration;
 
