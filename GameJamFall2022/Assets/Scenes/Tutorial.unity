@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follows: {fileID: 1400894322}
-  inverseFollowSpeed: 50
+  inverseFollowSpeed: 20
 --- !u!1001 &636208479
 PrefabInstance:
   m_ObjectHideFlags: 0
