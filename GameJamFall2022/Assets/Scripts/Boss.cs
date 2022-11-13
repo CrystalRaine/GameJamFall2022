@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+public enum BossPhase { FOOT, HAND, FINISHED};
 public class Boss : MonoBehaviour
 {
     public GameObject[] prefabs;
     public GameObject bossLeg;
     public GameObject bossHand;
     public float legHealth = 5;
+    public BossPhase phase = BossPhase.FOOT;
     void Awake()
     {
         bossLeg = GameObject.Instantiate(prefabs[0]);
@@ -30,30 +32,28 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-        if(legHealth <= 0 && bossHand == null) 
-        {
-            if(bossLeg != null && bossHand == null) 
+        if(phase == BossPhase.FOOT) 
+        { 
+            if(legHealth <= 0) 
             {
                 bossLeg.GetComponent<BossLeg>().Die();
-                CreateHand();
+                phase = BossPhase.HAND;
             }
-            else 
-            {
-                
-            }
-
         }
-        else if(legHealth <= 0) 
+        if(phase == BossPhase.HAND) 
         {
-            if (bossHand != null)
+            if(bossLeg == null) 
             {
-                bossHand.GetComponent<BossLeg>().Die();
-                bossHand = null;
-            }
-            if(bossHand == null && bossLeg == null) 
-            {
-                Debug.Log("You win!");
-                Destroy(this.gameObject);
+                if (bossHand == null)
+                {
+                    CreateHand();
+                }
+                if (legHealth <= 0)
+                {
+                    bossHand.GetComponent<BossLeg>().Die();
+                    Debug.Log("You win!");
+                    phase = BossPhase.FINISHED;
+                }
             }
         }
     }

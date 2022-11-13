@@ -54,9 +54,7 @@ public class BossLeg : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         boss.bossLeg = null;
-        boss.bossHand = null;
         GameObject.Destroy(this.gameObject);
-        StartCoroutine("FinalWait");
     }
 
     public void NewPlace() 

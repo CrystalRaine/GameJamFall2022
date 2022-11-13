@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelWin : MonoBehaviour
-{
-    public Spawner[] spawnersRemaining;
+public class BossWin : MonoBehaviour
+{ 
+    public GameObject[] spawnersRemaining;
     // Start is called before the first frame update
 
     private void Start()
