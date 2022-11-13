@@ -103,9 +103,9 @@ MonoBehaviour:
   damage: 1
   destroyOnHit: 0
   sprites:
-  - {fileID: -1435602249, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
-  - {fileID: -1635949749, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
-  - {fileID: -2042933582, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
+  - {fileID: -1833379293, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
+  - {fileID: 642686661, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
+  - {fileID: 1261241179, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
   splash:
   - {fileID: 1772410967, guid: 8138c225ffb2fa84b9e75d646b1aa337, type: 3}
   - {fileID: 1544618050, guid: 8138c225ffb2fa84b9e75d646b1aa337, type: 3}

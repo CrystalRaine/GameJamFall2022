@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 59488330aadd59f479035a1776a9c82c
-=======
-guid: 2b1751ce2139eb543a1ffdd14018e665
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
     enableMipMap: 1
-=======
-    enableMipMap: 0
->>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -41,11 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< Updated upstream
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> Stashed changes
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,11 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< Updated upstream
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,11 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< Updated upstream
   alphaIsTransparency: 0
-=======
-  alphaIsTransparency: 1
->>>>>>> Stashed changes
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -82,24 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< Updated upstream
   applyGammaDecoding: 1
   cookieLightType: 2
-=======
-  applyGammaDecoding: 0
-  cookieLightType: 0
->>>>>>> Stashed changes
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< Updated upstream
     textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> Stashed changes
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,11 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< Updated upstream
     textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> Stashed changes
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,34 +91,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-<<<<<<< Updated upstream
-    textureCompression: 0
-=======
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
->>>>>>> Stashed changes
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -164,7 +103,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< Updated upstream
     sprites:
     - serializedVersion: 2
       name: marmalaser-beam-Sheet_0
@@ -181,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9fe09c310997924fbea4009f5d2db10
-      internalID: -1435602249
+      spriteID: 80617dfd46f8b194da7f8e13ed5afcae
+      internalID: -1833379293
       vertices: []
       indices: 
       edges: []
@@ -191,9 +129,9 @@ TextureImporter:
       name: marmalaser-beam-Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 29
         y: 0
-        width: 32
+        width: 35
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c28f66ed87031244594815186aa23412
-      internalID: -1635949749
+      spriteID: 938d61db2bafbc64d898fff6b6c0a52d
+      internalID: 642686661
       vertices: []
       indices: 
       edges: []
@@ -214,7 +152,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 29
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,33 +161,26 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5a1f14f4310be34996164b9c0710f9b
-      internalID: -2042933582
+      spriteID: a48a6109fe3914e4581e1ee8787b97e1
+      internalID: 1261241179
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-    sprites: []
->>>>>>> Stashed changes
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b4215f698712b974fbce5d517d746a3d
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< Updated upstream
     nameFileIdTable:
-      marmalaser-beam-Sheet_1: -1635949749
-      marmalaser-beam-Sheet_0: -1435602249
-      marmalaser-beam-Sheet_2: -2042933582
-=======
-    nameFileIdTable: {}
->>>>>>> Stashed changes
+      marmalaser-beam-Sheet_1: 642686661
+      marmalaser-beam-Sheet_0: -1833379293
+      marmalaser-beam-Sheet_2: 1261241179
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
