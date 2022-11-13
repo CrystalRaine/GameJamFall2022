@@ -32,7 +32,7 @@ public class Boss : MonoBehaviour
     {
         if(legHealth <= 0 && bossHand == null) 
         {
-            if(bossLeg != null && bossHand == null) 
+            if(bossLeg != null) 
             {
                 bossLeg.GetComponent<BossLeg>().Die();
                 CreateHand();
