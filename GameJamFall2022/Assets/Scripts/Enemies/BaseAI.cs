@@ -94,7 +94,7 @@ public class BaseAI : MonoBehaviour
 
             if (collision.gameObject.TryGetComponent<MarmalaserSection>(out p))
             {
-                health -= collision.gameObject.GetComponent<Projectile>().damage;
+                health -= collision.gameObject.GetComponent<Projectile>().damage * Time.deltaTime;
                 if (health <= 0) { Destroy(this.gameObject); }
             }
         }

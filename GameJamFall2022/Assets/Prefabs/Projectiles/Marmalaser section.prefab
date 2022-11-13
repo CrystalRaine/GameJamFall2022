@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63f4296304e984a819d5163db43fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.04
+  damage: 1
   destroyOnHit: 0
   sprites:
   - {fileID: -1435602249, guid: 59488330aadd59f479035a1776a9c82c, type: 3}
