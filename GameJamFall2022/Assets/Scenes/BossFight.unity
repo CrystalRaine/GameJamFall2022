@@ -342,8 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923c513a3e89d40419e6cdacea3c26e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnersRemaining:
-  - {fileID: 1871499535}
+  boss: {fileID: 1871499535}
 --- !u!1001 &1069632372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -682,19 +681,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7740224515098708464, guid: 592b01b18d46ffd49890e7b65d97bf1d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 217.8596
+      value: 824.8
       objectReference: {fileID: 0}
     - target: {fileID: 7740224515098708464, guid: 592b01b18d46ffd49890e7b65d97bf1d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 32.268
+      value: 384
       objectReference: {fileID: 0}
     - target: {fileID: 7740224515098708464, guid: 592b01b18d46ffd49890e7b65d97bf1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0000061989
+      value: 0.0024567
       objectReference: {fileID: 0}
     - target: {fileID: 7740224515098708464, guid: 592b01b18d46ffd49890e7b65d97bf1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.7
+      value: -0.00098419
       objectReference: {fileID: 0}
     - target: {fileID: 7740224515244253023, guid: 592b01b18d46ffd49890e7b65d97bf1d, type: 3}
       propertyPath: m_text
@@ -822,6 +821,7 @@ MonoBehaviour:
   bossLeg: {fileID: 0}
   bossHand: {fileID: 0}
   legHealth: 1
+  phase: 0
 --- !u!4 &1871499537
 Transform:
   m_ObjectHideFlags: 0
