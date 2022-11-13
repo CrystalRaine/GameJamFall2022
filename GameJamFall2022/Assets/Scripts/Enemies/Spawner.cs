@@ -6,10 +6,12 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] spawnTypes;
+    public List<GameObject> spawns;
     public bool active;
     public float health = 15;
     public float[] time;
     public int[] amount;
+    public int maxSpawns;
 
     private List<float> times = new();
 
@@ -41,27 +43,22 @@ public class Spawner : MonoBehaviour
 
     public void Spawn(int i)
     {
+        for(int x = 0; x < spawns.Count; x++)
+        {
+            if(spawns[x] == null){
+                spawns.RemoveAt(x);
+            }
+        }
+
         for (int j = 0; j < amount[i]; j++)
-            Instantiate(spawnTypes[i], this.transform.position, Quaternion.identity);
-    }
-
-    public void SpawnBread()
-    {
-        int num = 1;
-        for(int i = 0; i < num; i++) 
         {
-            GameObject go = GameObject.Instantiate(spawnTypes[0], this.transform.position, Quaternion.identity);
+            if(spawns.Count < maxSpawns)
+            spawns.Add(Instantiate(spawnTypes[i], this.transform.position, Quaternion.identity));
+            
         }
     }
 
-    public void SpawnCrumb()
-    {
-        int num = 5;
-        for (int i = 0; i < num; i++)
-        {
-            GameObject go = GameObject.Instantiate(spawnTypes[1], this.transform.position, Quaternion.identity);
-        }
-    }
+   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
