@@ -106,7 +106,7 @@ MonoBehaviour:
   minX: -10
   minY: -4.5
   movementRange: 3
-  step: 0.03
+  step: 0.006
   health: 2
   player: {fileID: 0}
   attackCooldown: 24
