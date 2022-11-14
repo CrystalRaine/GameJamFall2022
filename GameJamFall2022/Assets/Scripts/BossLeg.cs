@@ -89,7 +89,7 @@ public class BossLeg : MonoBehaviour
         while ((Vector2)leg.transform.position != stompPlace) 
         {
             leg.transform.position = Vector2.MoveTowards(leg.transform.position, stompPlace, .1f);
-            shadow.transform.localScale = new Vector3(shadow.transform.localScale.x + .02f, shadow.transform.localScale.y + .02f, 0);
+            shadow.transform.localScale = new Vector3(shadow.transform.localScale.x + .01f, shadow.transform.localScale.y + .01f, 0);
             yield return null;
         }
         if((Vector2)leg.transform.position == stompPlace) 

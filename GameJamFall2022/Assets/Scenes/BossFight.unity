@@ -820,7 +820,7 @@ MonoBehaviour:
   - {fileID: 1750925018000319068, guid: f06c1b5136b204145b8c4d97e15d6df6, type: 3}
   bossLeg: {fileID: 0}
   bossHand: {fileID: 0}
-  legHealth: 1
+  legHealth: 30
   phase: 0
 --- !u!4 &1871499537
 Transform:

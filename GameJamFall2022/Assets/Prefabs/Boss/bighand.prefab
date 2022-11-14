@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5854575224435752125}
   m_Layer: 2
   m_Name: bighand
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
