@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelWin : MonoBehaviour
-{
-    public Spawner[] spawnersRemaining;
+public class BossWin : MonoBehaviour
+{ 
+    public GameObject boss;
     // Start is called before the first frame update
 
     private void Start()
@@ -14,15 +14,7 @@ public class LevelWin : MonoBehaviour
 
     public bool isFinished()
     {
-        for (int i = 0; i < spawnersRemaining.Length; i++)
-        {
-
-            if (spawnersRemaining[i] != null)
-            {
-                return false;
-            }
-        }
-        return true;
+        return boss.GetComponent<Boss>().phase == BossPhase.FINISHED;
     }
 
     private void Update()
