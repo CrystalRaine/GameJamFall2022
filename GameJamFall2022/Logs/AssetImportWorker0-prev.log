@@ -16,7 +16,11 @@ C:/Users/grace/OneDrive/Documents/GitHub/GameJamFall2022/GameJamFall2022
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 54227
+=======
+52646
+>>>>>>> Stashed changes
 =======
 52646
 >>>>>>> Stashed changes
@@ -52,7 +56,11 @@ C:/Users/grace/OneDrive/Documents/GitHub/GameJamFall2022/GameJamFall2022
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 114.11 ms, found 6 plugins.
+=======
+Refreshing native plugins compatible for Editor in 85.82 ms, found 6 plugins.
+>>>>>>> Stashed changes
 =======
 Refreshing native plugins compatible for Editor in 85.82 ms, found 6 plugins.
 >>>>>>> Stashed changes
@@ -76,6 +84,7 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.009009 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 114.44 ms, found 6 plugins.
@@ -96,11 +105,23 @@ Domain Reload Profiling:
 	ReloadAssembly (603ms)
 		BeginReloadAssembly (74ms)
 >>>>>>> Stashed changes
+=======
+Registered in 0.006850 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 83.45 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.603 seconds
+Domain Reload Profiling:
+	ReloadAssembly (603ms)
+		BeginReloadAssembly (74ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		EndReloadAssembly (596ms)
 			LoadAssemblies (89ms)
@@ -125,12 +146,25 @@ Domain Reload Profiling:
 			RebuildScriptCaches (26ms)
 			SetupLoadedEditorAssemblies (265ms)
 				LogAssemblyErrors (0ms)
+=======
+		EndReloadAssembly (427ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (88ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (265ms)
+				LogAssemblyErrors (0ms)
+>>>>>>> Stashed changes
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (126ms)
 				ProcessInitializeOnLoadMethodAttributes (44ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -139,7 +173,11 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.017604 seconds.
+=======
+Registered in 0.013506 seconds.
+>>>>>>> Stashed changes
 =======
 Registered in 0.013506 seconds.
 >>>>>>> Stashed changes
@@ -147,6 +185,7 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\grace\OneDrive\Documents\GitHub\GameJamFall2022\GameJamFall2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\grace\OneDrive\Documents\GitHub\GameJamFall2022\GameJamFall2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 81.56 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -156,6 +195,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1079ms)
 		BeginReloadAssembly (102ms)
 =======
+=======
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 84.33 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -163,11 +204,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1103ms)
 		BeginReloadAssembly (107ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 			CreateAndSetChildDomain (19ms)
 		EndReloadAssembly (860ms)
@@ -197,11 +242,27 @@ Domain Reload Profiling:
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
+=======
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (881ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (474ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+>>>>>>> Stashed changes
 				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (98ms)
 				ProcessInitializeOnLoadAttributes (238ms)
 				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (8ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -211,6 +272,7 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 0.81 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4101 Unused Serialized files (Serialized files now loaded: 0)
@@ -218,6 +280,8 @@ Unloading 55 unused Assets / (58.0 KB). Loaded Objects now: 4584.
 Memory consumption went from 154.3 MB to 154.3 MB.
 Total: 3.212100 ms (FindLiveObjects: 0.322600 ms CreateObjectMapping: 0.168000 ms MarkObjects: 2.629500 ms  DeleteObjects: 0.090900 ms)
 =======
+=======
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4098 Unused Serialized files (Serialized files now loaded: 0)
@@ -263,6 +327,7 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\grace\OneDrive\Documen
 Symbol file LoadedFromMemory doesn't match image C:\Users\grace\OneDrive\Documents\GitHub\GameJamFall2022\GameJamFall2022\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 6 plugins.
+<<<<<<< Updated upstream
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.207 seconds
@@ -295,10 +360,47 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 4.29 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+=======
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.207 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1208ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (973ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (303ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (454ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (280ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.29 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+>>>>>>> Stashed changes
 Unloading 4074 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 42 unused Assets / (26.2 KB). Loaded Objects now: 4592.
 Memory consumption went from 156.7 MB to 156.7 MB.
 Total: 5.501000 ms (FindLiveObjects: 0.544000 ms CreateObjectMapping: 0.225400 ms MarkObjects: 4.673700 ms  DeleteObjects: 0.056300 ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -314,6 +416,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   Time since last request: 373939.344686 seconds.
   path: Assets/bimtro1.mp4
@@ -383,6 +486,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 =======
+=======
+>>>>>>> Stashed changes
   Time since last request: 436.847331 seconds.
   path: Assets/Sprites/bighand.png
   artifactKey: Guid(12f2390059c2f7042a35eb38fae23691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -405,4 +510,7 @@ Received Import Request.
   path: Assets/Sprites/legshadow.png
   artifactKey: Guid(52f41c456f3f4d548af83130ea464d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/legshadow.png using Guid(52f41c456f3f4d548af83130ea464d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841dac5fc65f3ce6fc3dab00b72149b2') in 0.014235 seconds 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
